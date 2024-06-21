@@ -17,7 +17,7 @@
     <title>Yousef kmail</title>
   </head>
   <body>
-    <div class="flex-column flex-justify-space-between main-container">
+    <div class="flex-column flex-justify-space-between body-container">
       <div class="main-layout">
         <header>
           <seciton class="flex-justify-space-between header-top">
@@ -52,307 +52,310 @@
             </div>
           </section>
         </header>
-        <main class="main">
-          <section>
-            <form class="search-bar" action="">
-              <div class="search">
-                <div class="flex-align-center m-3">
-                  <i class="fa fa-search"></i>
+        <main class="flex-justify-center main">
+          <div class="main-container">
+            <section>
+              <form class="search-bar" action="">
+                <div class="search">
+                  <div class="flex-align-center m-3">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <input
+                    placeholder="Search the website..."
+                    type="text"
+                    name=""
+                    id=""
+                  />
                 </div>
-                <input
-                  placeholder="Search the website..."
-                  type="text"
-                  name=""
-                  id=""
-                />
+                <div class="settings">
+                  <div class="p-1 sort">
+                    <div>Sort by</div>
+                    <select>
+                      <option value="1">desc</option>
+                    </select>
+                  </div>
+                  <div class="p-1 filter">
+                    <div>Filter by</div>
+                    <select>
+                      <option value="1">desc</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </section>
+            <section>
+              <div>
+                <h2>"24" Web Topics found</h2>
               </div>
-              <div class="settings">
-                <div class="p-1 sort">
-                  <div>Sort by</div>
-                  <select>
-                    <option value="1">desc</option>
-                  </select>
-                </div>
-                <div class="p-1 filter">
-                  <div>Filter by</div>
-                  <select>
-                    <option value="1">desc</option>
-                  </select>
-                </div>
-              </div>
-            </form>
-          </section>
-          <section>
-            <div>
-              <h2>"24" Web Topics found</h2>
-            </div>
-            <div class="flex flex-justify-center cards-container">
-              <div class="card">
-                <div class="position-relative">
-                  <img src="./Assets/Logos/html.png" alt="" />
-                </div>
-                <div class="px-4">
-                  <p class="my-1">Web development language</p>
-                  <h4 class="m-0">HTML</h4>
-                  <div class="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star-o"></span>
-                    <span class="fa fa-star-o"></span>
+              <div class="flex flex-justify-center cards-container">
+                <div class="card">
+                  <div class="position-relative">
+                    <img src="./Assets/Logos/html.png" alt="" />
                   </div>
-                  <div class="mb-4">
-                    <span>Auther:</span>
-                    <span>Sarah smith</span>
+                  <div class="px-4">
+                    <p class="my-1">Web development language</p>
+                    <h4 class="m-0">HTML</h4>
+                    <div class="stars-container">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star-o"></span>
+                      <span class="fa fa-star-o"></span>
+                    </div>
+                    <div class="mb-4">
+                      <span>Auther:</span>
+                      <span>Sarah smith</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/Logos/css.webp" alt="" />
-                <div class="px-4">
-                  <p class="my-1">Web development language</p>
-                  <h4 class="m-0">CSS</h4>
-                  <div class="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <div class="mb-4">
-                    <span>Auther:</span>
-                    <span>David Lee</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/Logos/javascript.jpg" alt="" />
-                <div class="px-4">
-                  <p class="my-1">Web development language</p>
-                  <h4 class="m-0">JavaScript</h4>
-                  <div class="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <div class="mb-4">
-                    <span>Auther:</span>
-                    <span>Emily Chen</span>
+                <div class="card">
+                  <img src="./Assets/Logos/css.webp" alt="" />
+                  <div class="px-4">
+                    <p class="my-1">Web development language</p>
+                    <h4 class="m-0">CSS</h4>
+                    <div class="stars-container">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="mb-4">
+                      <span>Auther:</span>
+                      <span>David Lee</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/Logos/jquery.png" alt="" />
-                <div class="px-4">
-                  <p class="my-1">Frontend frameworks and libraries</p>
-                  <h4 class="m-0">jQuery</h4>
-                  <div class="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <div class="mb-4">
-                    <span>Auther:</span>
-                    <span>John Johnson</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/Logos/angular.png" alt="" />
-                <div class="px-4">
-                  <p class="my-1">Frontend frameworks and libraries</p>
-                  <h4 class="m-0">Angular</h4>
-                  <div class="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <div class="mb-4">
-                    <span>Auther:</span>
-                    <span>Jessica Davis</span>
+                <div class="card">
+                  <img src="./Assets/Logos/javascript.jpg" alt="" />
+                  <div class="px-4">
+                    <p class="my-1">Web development language</p>
+                    <h4 class="m-0">JavaScript</h4>
+                    <div class="stars-container">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="mb-4">
+                      <span>Auther:</span>
+                      <span>Emily Chen</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/Logos/react.webp" alt="" />
-                <div class="px-4">
-                  <p class="my-1">Frontend frameworks and libraries</p>
-                  <h4 class="m-0">React</h4>
-                  <div class="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <div class="mb-4">
-                    <span>Auther:</span>
-                    <span>Daniel Brown</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/Logos/vuejs.jpeg" alt="" />
-                <div class="px-4">
-                  <p class="my-1">Frontend frameworks and libraries</p>
-                  <h4 class="m-0">Vue.js</h4>
-                  <div class="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <div class="mb-4">
-                    <span>Auther:</span>
-                    <span>Ava Jones</span>
+                <div class="card">
+                  <img src="./Assets/Logos/jquery.png" alt="" />
+                  <div class="px-4">
+                    <p class="my-1">Frontend frameworks and libraries</p>
+                    <h4 class="m-0">jQuery</h4>
+                    <div class="stars-container">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="mb-4">
+                      <span>Auther:</span>
+                      <span>John Johnson</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/Logos/nodejs.webp" alt="" />
-                <div class="px-4">
-                  <p class="my-1">Backend frameworks and libraries</p>
-                  <h4 class="m-0">Node.js</h4>
-                  <div class="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <div class="mb-4">
-                    <span>Auther:</span>
-                    <span>Michael kim</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/Logos/expressjs.webp" alt="" />
-                <div class="px-4">
-                  <p class="my-1">Backend frameworks and libraries</p>
-                  <h4 class="m-0">Express.js</h4>
-                  <div class="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <div class="mb-4">
-                    <span>Auther:</span>
-                    <span>Sophia rodriguez</span>
+                <div class="card">
+                  <img src="./Assets/Logos/angular.png" alt="" />
+                  <div class="px-4">
+                    <p class="my-1">Frontend frameworks and libraries</p>
+                    <h4 class="m-0">Angular</h4>
+                    <div class="stars-container">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="mb-4">
+                      <span>Auther:</span>
+                      <span>Jessica Davis</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/Logos/ruby.jpeg" alt="" />
-                <div class="px-4">
-                  <p class="my-1">Backend frameworks and libraries</p>
-                  <h4 class="m-0">Ruby on Rails</h4>
-                  <div class="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <div class="mb-4">
-                    <span>Auther:</span>
-                    <span>Williams Lee</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/Logos/django.jpeg" alt="" />
-                <div class="px-4">
-                  <p class="my-1">Backend frameworks and libraries</p>
-                  <h4 class="m-0">Node.js</h4>
-                  <div class="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <div class="mb-4">
-                    <span>Auther:</span>
-                    <span>Michael kim</span>
+                <div class="card">
+                  <img src="./Assets/Logos/react.webp" alt="" />
+                  <div class="px-4">
+                    <p class="my-1">Frontend frameworks and libraries</p>
+                    <h4 class="m-0">React</h4>
+                    <div class="stars-container">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="mb-4">
+                      <span>Auther:</span>
+                      <span>Daniel Brown</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/Logos/flask.webp" alt="" />
-                <div class="px-4">
-                  <p class="my-1">Backend frameworks and libraries</p>
-                  <h4 class="m-0">Flask</h4>
-                  <div class="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <div class="mb-4">
-                    <span>Auther:</span>
-                    <span>Ethan Thompson</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/Logos/sql.png" alt="" />
-                <div class="px-4">
-                  <p class="my-1">Database and apis</p>
-                  <h4 class="m-0">Sql</h4>
-                  <div class="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <div class="mb-4">
-                    <span>Auther:</span>
-                    <span>Madison Davis</span>
+                <div class="card">
+                  <img src="./Assets/Logos/vuejs.jpeg" alt="" />
+                  <div class="px-4">
+                    <p class="my-1">Frontend frameworks and libraries</p>
+                    <h4 class="m-0">Vue.js</h4>
+                    <div class="stars-container">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="mb-4">
+                      <span>Auther:</span>
+                      <span>Ava Jones</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/Logos/nosql.png" alt="" />
-                <div class="px-4">
-                  <p class="my-1">Database and apis</p>
-                  <h4 class="m-0">NoSql</h4>
-                  <div class="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+                <div class="card">
+                  <img src="./Assets/Logos/nodejs.webp" alt="" />
+                  <div class="px-4">
+                    <p class="my-1">Backend frameworks and libraries</p>
+                    <h4 class="m-0">Node.js</h4>
+                    <div class="stars-container">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="mb-4">
+                      <span>Auther:</span>
+                      <span>Michael kim</span>
+                    </div>
                   </div>
-                  <div class="mb-4">
-                    <span>Auther:</span>
-                    <span>Isabella Willson</span>
+                </div>
+                <div class="card">
+                  <img src="./Assets/Logos/expressjs.webp" alt="" />
+                  <div class="px-4">
+                    <p class="my-1">Backend frameworks and libraries</p>
+                    <h4 class="m-0">Express.js</h4>
+                    <div class="stars-container">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="mb-4">
+                      <span>Auther:</span>
+                      <span>Sophia rodriguez</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./Assets/Logos/ruby.jpeg" alt="" />
+                  <div class="px-4">
+                    <p class="my-1">Backend frameworks and libraries</p>
+                    <h4 class="m-0">Ruby on Rails</h4>
+                    <div class="stars-container">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="mb-4">
+                      <span>Auther:</span>
+                      <span>Williams Lee</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./Assets/Logos/django.jpeg" alt="" />
+                  <div class="px-4">
+                    <p class="my-1">Backend frameworks and libraries</p>
+                    <h4 class="m-0">Node.js</h4>
+                    <div class="stars-container">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="mb-4">
+                      <span>Auther:</span>
+                      <span>Michael kim</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./Assets/Logos/flask.webp" alt="" />
+                  <div class="px-4">
+                    <p class="my-1">Backend frameworks and libraries</p>
+                    <h4 class="m-0">Flask</h4>
+                    <div class="stars-container">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="mb-4">
+                      <span>Auther:</span>
+                      <span>Ethan Thompson</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./Assets/Logos/sql.png" alt="" />
+                  <div class="px-4">
+                    <p class="my-1">Database and apis</p>
+                    <h4 class="m-0">Sql</h4>
+                    <div class="stars-container">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="mb-4">
+                      <span>Auther:</span>
+                      <span>Madison Davis</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./Assets/Logos/nosql.png" alt="" />
+                  <div class="px-4">
+                    <p class="my-1">Database and apis</p>
+                    <h4 class="m-0">NoSql</h4>
+                    <div class="stars-container">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="mb-4">
+                      <span>Auther:</span>
+                      <span>Isabella Willson</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
 
-          <div class="flex-justify-center">
-            <p>
-              Developed with
-              <span class="color-red">
-                <i class="fa-solid fa-heart"></i>
-              </span>
-            </p>
+            <div class="flex-justify-center">
+              <p>
+                Developed with
+                <span class="color-red">
+                  <i class="fa-solid fa-heart"></i>
+                </span>
+              </p>
+            </div>
           </div>
         </main>
+
         <footer></footer>
       </div>
     </div>

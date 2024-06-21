@@ -141,7 +141,7 @@ button {
   padding: 30px;
   background-color: var(--bg-body);
 }
-.main-container {
+.body-container {
   min-height: 100vh;
 }
 
@@ -176,6 +176,10 @@ button {
 }
 .fa-star-o {
   color: orange;
+}
+
+.main-container {
+  max-width: 1280px;
 }
 
 @media (max-width: 1024px) {
