@@ -9,6 +9,8 @@
   --body-text: #333333;
   --heart-color: #dc143c;
 
+  --default-border: 1px solid rgba(53, 52, 52, 0.106);
+
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -32,11 +34,40 @@ body {
 
 button {
   color: inherit;
+  background-color: var(--brand-secondary);
+  border: none;
+  padding: 8px;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: blue;
+}
+.add-fav-btn {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.details-card-bottom {
+  border: var(--default-border);
+  font-size: 0.875rem;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .color-secondary {
   color: var(--brand-secondary);
 }
+.background-secondary {
+  background-color: var(--brand-secondary);
+}
+
 .card {
   background-color: var(--bg-default);
   border-radius: 7px;
@@ -140,6 +171,12 @@ button {
   padding: 30px;
   background-color: var(--bg-body);
 }
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 .body-container {
   min-height: 100vh;
 }
@@ -161,6 +198,23 @@ button {
   cursor: pointer;
 }
 
+.sections-container {
+  max-width: 600px;
+  flex-grow: 1;
+  background-color: var(--bg-default);
+  border: var(--default-border);
+  border-radius: 7px;
+}
+.details-description {
+  background-color: #333333;
+}
+.details-description-container {
+  max-width: 880px;
+}
+
+.section-item {
+  border-top: var(--default-border);
+}
 .header-button i {
   width: 20px;
   font-weight: 500;
@@ -185,6 +239,22 @@ button {
   flex-grow: 1;
 }
 
+.description-container {
+  max-width: 600px;
+}
+
+.description-content {
+  padding-bottom: 24px;
+}
+
+.details-card {
+  transform: translateY(-200px);
+  background-color: white;
+  margin-left: 30px;
+  padding-bottom: 12px;
+  width: 250px;
+  color: black;
+}
 @media (max-width: 1024px) {
   .header-shape {
     height: 60px;

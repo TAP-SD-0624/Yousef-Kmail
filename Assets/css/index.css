@@ -2,6 +2,23 @@
   display: flex;
 }
 
+.fg-0 {
+  flex-grow: 0;
+}
+.fg-1 {
+  flex-grow: 1;
+}
+
+.fg-2 {
+  flex-grow: 2;
+}
+.fg-3 {
+  flex-grow: 3;
+}
+.fg-4 {
+  flex-grow: 4;
+}
+
 .flex-justify-center {
   display: flex;
   justify-content: center;
@@ -53,8 +70,31 @@
   margin: 16px;
 }
 
+.ml-0 {
+  margin-left: 0;
+}
+.ml-1 {
+  margin-left: 4px;
+}
+
+.ml-2 {
+  margin-left: 8px;
+}
+
+.ml-3 {
+  margin-left: 12px;
+}
+
+.ml-4 {
+  margin-left: 16px;
+}
+
 .mr-1 {
   margin-right: 4px;
+}
+
+.mr-2 {
+  margin-right: 8px;
 }
 
 .mb-0 {
@@ -74,6 +114,49 @@
 
 .mb-4 {
   margin-bottom: 16px;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+.mt-1 {
+  margin-top: 4px;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.mt-3 {
+  margin-top: 12px;
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+.mx-0 {
+  margin-right: 0;
+  margin-left: 0;
+}
+.mx-1 {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.mx-2 {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.mx-3 {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.mx-4 {
+  margin-right: 16px;
+  margin-left: 16px;
 }
 
 .my-0 {
@@ -181,4 +264,8 @@
 
 .color-red {
   color: red;
+}
+
+.text-white {
+  color: white;
 }
