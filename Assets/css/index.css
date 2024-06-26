@@ -32,13 +32,6 @@ body {
   color: var(--body-text);
 }
 
-button {
-  color: inherit;
-  background-color: var(--brand-secondary);
-  border: none;
-  padding: 8px;
-}
-
 img {
   width: 100%;
   object-fit: cover;
