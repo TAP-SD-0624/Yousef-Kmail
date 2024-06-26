@@ -1,7 +1,6 @@
 import data from "../../topics.json" with { type: "json" };
 import { SubTopic } from "./Subtopic.js";
 import { ToggleThemeMode } from "./Darkmode.js";
-
 document.getElementById("theme-toggle").addEventListener("click" , ToggleThemeMode)
 
 const searchParams = new URLSearchParams(window.location.search);
