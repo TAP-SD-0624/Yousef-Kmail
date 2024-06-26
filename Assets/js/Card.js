@@ -37,6 +37,5 @@ export const CreateCard = ({ image, category, rating, name, topic, id }) => {
           <span>${name}</span>
         </div>
       </div>`;
-
   return card;
 };
