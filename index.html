@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Assets/css/components.css" />
+    <link rel="stylesheet" href="./Assets/css/Utils.css" />
     <link rel="stylesheet" href="./Assets/css/index.css" />
     <script type="module" src="./Assets/js/index.js"></script>
     <script
@@ -18,14 +19,14 @@
   </head>
   <body>
     <div class="flex-column flex-justify-space-between body-container">
-      <div class="main-layout">
+      <div id="app" class="main-layout">
         <header>
           <seciton class="flex-justify-space-between header-top">
             <p class="header-top-title">Web Topics</p>
             <div class="flex-justify-center">
-              <button id="mode-toggle" class="p-1 mr-1 header-button">
+              <button id="theme-toggle" class="p-1 mr-1 header-button">
                 <i class="fa fa-moon-o"></i>
-                <span class="header-button-label"> Dark Mode </span>
+                <span class="header-button-label">Dark Mode</span>
               </button>
               <button class="p-1 header-button">
                 <i class="fa-regular fa-heart"></i>
@@ -33,7 +34,6 @@
               </button>
             </div>
           </seciton>
-
           <section>
             <div class="header-shape">
               <div class="triangle-b"></div>
@@ -97,7 +97,6 @@
             </div>
           </div>
         </main>
-        <footer></footer>
       </div>
     </div>
   </body>

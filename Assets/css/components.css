@@ -1,52 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
-
-:root {
-  --brand-primary: #0768ac;
-  --brand-secondary: #03c180;
-  --bg-default: #ffffff;
-  --bg-body: #f0f9ff;
-  --lines-color: #dddddd;
-  --body-text: #333333;
-  --heart-color: #dc143c;
-
-  --default-border: 1px solid rgba(53, 52, 52, 0.106);
-
-  font-family: "Nunito Sans", sans-serif;
-}
-
-.dark-mode {
-  --brand-primary: #0768ac;
-  --brand-secondary: #03c180;
-  --bg-default: #1a1a1a;
-  --bg-body: #282828;
-  --lines-color: #000000;
-  --body-text: #ededed;
-  --heart-color: #dc143c;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: var(--bg-default);
-  color: var(--body-text);
-}
-
-button {
-  color: inherit;
-  background-color: var(--brand-secondary);
-  border: none;
-  padding: 8px;
-}
-
-img {
-  width: 100%;
-  object-fit: cover;
-}
-
-a {
-  color: blue;
-}
 .add-fav-btn {
   font-size: 1.2rem;
   color: white;
@@ -72,6 +23,8 @@ a {
   background-color: var(--bg-default);
   border-radius: 7px;
   overflow: hidden;
+  color: var(--body-text);
+  text-decoration: none;
 }
 
 .card img {
@@ -137,6 +90,9 @@ a {
   padding: 10px 3%;
 }
 
+.a {
+  color: blue;
+}
 .header-top-title {
   color: var(--brand-primary);
   font-weight: 700;

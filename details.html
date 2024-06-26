@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Assets/css/components.css" />
+    <link rel="stylesheet" href="./Assets/css/Utils.css" />
     <link rel="stylesheet" href="./Assets/css/index.css" />
-    <script type="module" src="./Assets/js/index.js"></script>
+    <script type="module" src="./Assets/js/details.js"></script>
     <script
       src="https://kit.fontawesome.com/487e783765.js"
       crossorigin="anonymous"
@@ -23,10 +24,7 @@
           <seciton class="flex-justify-space-between header-top">
             <p class="header-top-title">Web Topics</p>
             <div class="flex-justify-center">
-              <button
-                onclick="ToggleThemeMode()"
-                class="p-1 mr-1 header-button"
-              >
+              <button id="theme-toggle" class="p-1 mr-1 header-button">
                 <i class="fa fa-moon-o"></i>
                 <span class="header-button-label"> Dark Mode </span>
               </button>
@@ -51,21 +49,17 @@
             </div>
           </section>
         </header>
-        <main class="flex-justify-center main p-0 fg-1">
+        <main class="flex-justify-center main p-1 fg-1">
           <div class="fg-1">
             <section class="flex-justify-center details-description">
               <div class="fg-1 details-description-container">
                 <div class="text-white fg-1 description-container">
-                  <p class="color-secondary mb-1">Web development Languages</p>
-                  <h2 class="my-1">HTMl</h2>
-                  <div class="">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <p class="description-content">
+                  <p id="category" class="color-secondary mb-1">
+                    Web development Languages
+                  </p>
+                  <h2 id="topic" class="my-1">HTMl</h2>
+                  <div id="stars-container" class=""></div>
+                  <p id="description" class="description-content">
                     HTML (Hypertext Markup Language) is the standard markup
                     language for creating web pages and other information that
                     can be displayed in a web browser. It provides a structure
@@ -78,51 +72,59 @@
               </div>
             </section>
             <section class="mt-4 flex-justify-center">
-              <div class="flex-justify-center fg-1">
+              <div class="flex-justify-center fg-1 align-start">
                 <div class="sections-container">
                   <div class="px-4">
-                    <h3>HTMl Sub topics</h3>
+                    <h3 id="sub-topics-label">HTMl Sub topics</h3>
                   </div>
-                  <div class="py-3 px-4 section-item section-item">
-                    <i
-                      class="fa-regular fa-circle-check color-secondary mr-2"
-                    ></i>
-                    HTML Syntax and structure
-                  </div>
-                  <div class="py-3 px-4 section-item">
-                    <i
-                      class="fa-regular fa-circle-check color-secondary mr-2"
-                    ></i>
-                    HTML Syntax and structure
-                  </div>
-                  <div class="py-3 px-4 section-item">
-                    <i
-                      class="fa-regular fa-circle-check color-secondary mr-2"
-                    ></i>
-                    HTML Syntax and structure
-                  </div>
-                  <div class="py-3 px-4 section-item">
-                    <i
-                      class="fa-regular fa-circle-check color-secondary mr-2"
-                    ></i>
-                    HTML Syntax and structure
-                  </div>
-                  <div class="py-3 px-4 section-item">
-                    <i
-                      class="fa-regular fa-circle-check color-secondary mr-2"
-                    ></i>
-                    HTML Syntax and structure
-                  </div>
-                  <div class="py-3 px-4 section-item">
-                    <i
-                      class="fa-regular fa-circle-check color-secondary mr-2"
-                    ></i>
-                    HTML Syntax and structure
+                  <div id="subtopics-container">
+                    <div class="py-3 px-4 section-item section-item">
+                      <i
+                        class="fa-regular fa-circle-check color-secondary mr-2"
+                      ></i>
+                      HTML Syntax and structure
+                    </div>
+                    <div class="py-3 px-4 section-item">
+                      <i
+                        class="fa-regular fa-circle-check color-secondary mr-2"
+                      ></i>
+                      HTML Syntax and structure
+                    </div>
+                    <div class="py-3 px-4 section-item">
+                      <i
+                        class="fa-regular fa-circle-check color-secondary mr-2"
+                      ></i>
+                      HTML Syntax and structure
+                    </div>
+                    <div class="py-3 px-4 section-item">
+                      <i
+                        class="fa-regular fa-circle-check color-secondary mr-2"
+                      ></i>
+                      HTML Syntax and structure
+                    </div>
+                    <div class="py-3 px-4 section-item">
+                      <i
+                        class="fa-regular fa-circle-check color-secondary mr-2"
+                      ></i>
+                      HTML Syntax and structure
+                    </div>
+                    <div class="py-3 px-4 section-item">
+                      <i
+                        class="fa-regular fa-circle-check color-secondary mr-2"
+                      ></i>
+                      HTML Syntax and structure
+                    </div>
                   </div>
                 </div>
                 <div class="details-card">
-                  <img src="./Assets/Logos/javascript.jpg" alt="" />
-                  <p class="ml-3">HTML by <a href="">Sarah smith</a></p>
+                  <img
+                    id="preview-image"
+                    src="./Assets/Logos/javascript.jpg"
+                    alt=""
+                  />
+                  <p class="ml-3">
+                    HTML by <a id="auther" href="">Sarah smith</a>
+                  </p>
                   <div class="mx-3 mt-3 details-card-bottom">
                     <div>
                       <p class="mt-3 mb-2">interested about this topic ?</p>
@@ -142,6 +144,7 @@
           </div>
         </main>
       </div>
+
       <footer></footer>
     </div>
   </body>
