@@ -10,6 +10,10 @@ document.getElementById("theme-toggle").addEventListener("click" , ToggleThemeMo
 const searchParams = new URLSearchParams(window.location.search);
 let id = searchParams.get("id");
 
+if(!id)
+    {
+        document.location.pathname = "./index.html"
+    }
 //Retrieve the topic the details page is inspecting.
 let detailed_item = data.find((x)=> x.id.toString() === id.toString())
 
