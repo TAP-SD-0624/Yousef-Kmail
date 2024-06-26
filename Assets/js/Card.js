@@ -19,7 +19,7 @@ export const CreateCard = ({ image, category, rating, name, topic, id }) => {
   };
 
   let card = document.createElement("a");
-  card.href = `/details.html?id=${id}`;
+  card.href = `./details.html?id=${id}`;
   card.classList.add("card");
   card.innerHTML = `<div class="position-relative">
         <img src="./Assets/Logos/${image}" alt="" />
