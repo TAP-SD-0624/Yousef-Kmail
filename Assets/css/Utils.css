@@ -249,6 +249,25 @@
   padding-left: 16px;
 }
 
+.pl-0 {
+  padding-left: 0;
+}
+.pl-1 {
+  padding-left: 4px;
+}
+
+.pl-2 {
+  padding-left: 8px;
+}
+
+.pl-3 {
+  padding-left: 12px;
+}
+
+.pl-4 {
+  padding-left: 16px;
+}
+
 .fw-1 {
   font-weight: 300;
 }

@@ -104,6 +104,8 @@
 .header-top-title {
   color: var(--brand-primary);
   font-weight: 700;
+  margin: 16px 0;
+  text-decoration: none;
 }
 .header-shape {
   height: 80px;
@@ -143,6 +145,37 @@
 }
 .body-container {
   min-height: 100vh;
+}
+
+.favorite {
+  transition: transform 1s;
+  transform: translateY(100%);
+  bottom: 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--bg-default);
+  padding: 0 30px 20px 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.favorite-show {
+  transform: translateY(0);
+}
+
+.favorite-card {
+  width: 200px;
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 1);
+}
+
+.favorite-cards-container {
+  gap: 30px;
+}
+
+.favorite-card-img {
+  width: 100%;
+  aspect-ratio: 2/1;
 }
 
 .cards-container {
@@ -219,6 +252,10 @@
   padding-bottom: 12px;
   width: 250px;
   color: black;
+}
+
+.page-max-width {
+  max-width: 1280px;
 }
 @media (max-width: 1024px) {
   .header-shape {
