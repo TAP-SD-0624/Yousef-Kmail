@@ -13,3 +13,14 @@ export const ToggleFavorite = () => {
     ? favElement.classList.remove("favorite-show")
     : favElement.classList.add("favorite-show");
 };
+
+export const UpdateButtonVisuals = (state) => {
+  document.getElementById("add-favorite-button").innerHTML = state
+    ? "Remove from favourite "
+    : "Add to favourite ";
+
+  let i = document.createElement("i");
+  i.classList.add("fa-regular", "fa-heart");
+
+  document.getElementById("add-favorite-button").appendChild(i);
+};
