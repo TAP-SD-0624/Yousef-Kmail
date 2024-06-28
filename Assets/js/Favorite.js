@@ -1,6 +1,6 @@
 import data from "../../topics.json" with { type: "json" };
 import { FavoriteCard } from "./FavoriteCard.js";
-import { GetFavoriteTopics } from "./FavoriteManager.js";
+import { GetFavoriteTopics } from "./FavoriteRepository.js";
 
 export const Favorite = () => {
   let cont = document.createElement("div");

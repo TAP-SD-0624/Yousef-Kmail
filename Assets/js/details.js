@@ -2,7 +2,7 @@ import data from "../../topics.json" with { type: "json" };
 import { SubTopic } from "./Subtopic.js";
 import {  ToggleFavorite as ShowFavorite } from "./Utils.js";
 import { GenerateStars } from "./StarsGenerator.js";
-import { ToggleFavorite, ExistInFavorite } from "./FavoriteManager.js";
+import { ToggleFavorite, ExistInFavorite } from "./FavoriteRepository.js";
 import { Favorite } from "./Favorite.js";
 import { SetThemeMode } from "./Utils.js";
 import { GetMode, ToggleMode } from "./DarkmodeManager.js";
@@ -14,7 +14,7 @@ let id = searchParams.get("id");
 if (!id) {
   document.location.pathname = "./index.html";
 }
-//Retrieve the topic the details page is inspecting.
+//Retrieve the topic that the details page is inspecting.
 let detailed_item = data.find((x) => x.id.toString() === id.toString());
 
 // populate topic data among different sections of the details page.
@@ -34,36 +34,36 @@ document
 
 
 
+//start
+//lets handle pressing on the button of the card(Add or remove from favorite).
+//Display correct state first on the button.  
+UpdateButtonVisuals(ExistInFavorite(id));
 
+//once the button is pressed we will toggle the state of the card.
 const HandleAddFavorite = ()=>{
     ToggleFavorite(id);
     UpdateButtonVisuals();
 }
 
-
+//hook the functionality with the button
 document
   .getElementById("add-favorite-button")
   .addEventListener("click", () => HandleAddFavorite(id));
+//end
 
 
-//lets handle pressing on the button of the card(Add or remove from favorite).
-
-//Display correct state first on the button.  
-UpdateButtonVisuals(ExistInFavorite(id));
-
-//
-
-
-
+//start
 //populate the subtopics
 let subtopics_container = document.getElementById("subtopics-container");
 subtopics_container.innerHTML = "";
 detailed_item.subtopics.forEach((item) => {
   subtopics_container.appendChild(SubTopic(item));
 });
+//end
 
 
 
+//start
 //handling the navbar button for showing or hiding the favorites.
 document
   .getElementById("toggle-favorite")
@@ -73,11 +73,11 @@ document
 //lets add our favorites to the favorites container.
 document
   .getElementById("favorite").appendChild(Favorite());
+//end
 
 
-
+//start
 //lets handle the theme of our app
-
 //we call the setTheme at the begining so our page take our preference 
 SetThemeMode(GetMode());
 
@@ -91,3 +91,4 @@ const HandleThemeButton = ()=>{
 document
   .getElementById("theme-toggle")
   .addEventListener("click", HandleThemeButton);
+//end
