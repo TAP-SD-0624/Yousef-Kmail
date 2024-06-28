@@ -3,7 +3,7 @@
 //while fractions would generate half a star "0.1 - 0.99"
 export const GenerateStars = (rating) => {
   let stars = document.createElement("div");
-  stars.classList.add("stars-container");
+  stars.classList.add("stars");
   let i = 1;
   for (; i < rating; i++) {
     let fullStar = document.createElement("span");
