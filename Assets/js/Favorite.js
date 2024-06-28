@@ -7,7 +7,6 @@ export const Favorite = () => {
   cont.classList.add("favorite");
   cont.id = "favorite-container";
 
-
   let container = document.createElement("div");
   container.classList.add("fg-1" , "page-max-width");
   cont.appendChild(container);
@@ -19,8 +18,8 @@ export const Favorite = () => {
   container.appendChild(label);
 
   let innerContainer = document.createElement("div");
-      innerContainer.classList.add("flex","favorite-cards-container")
-  
+      innerContainer.classList.add("favorite-cards-container")
+    
   container.appendChild(innerContainer);
 
   let favorite_Items = GetFavoriteTopics();

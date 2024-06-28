@@ -149,6 +149,7 @@
 }
 
 .favorite {
+  box-sizing: border-box;
   transition: transform 1s;
   transform: translateY(100%);
   bottom: 0;
@@ -171,7 +172,9 @@
 }
 
 .favorite-cards-container {
-  gap: 30px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .favorite-card-img {
