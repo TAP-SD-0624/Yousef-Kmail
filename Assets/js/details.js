@@ -1,10 +1,11 @@
 import data from "../../topics.json" with { type: "json" };
 import { SubTopic } from "./Subtopic.js";
-import { ToggleThemeMode, ToggleFavorite as ShowFavorite } from "./Utils.js";
+import {  ToggleFavorite as ShowFavorite } from "./Utils.js";
 import { GenerateStars } from "./StarsGenerator.js";
 import { ToggleFavorite, ExistInFavorite } from "./FavoriteManager.js";
 import { Favorite } from "./Favorite.js";
-
+import { SetThemeMode } from "./Utils.js";
+import { GetMode, ToggleMode } from "./DarkmodeManager.js";
 //Retrieve the id from the QueryString in the URL
 const searchParams = new URLSearchParams(window.location.search);
 let id = searchParams.get("id");
@@ -62,6 +63,13 @@ detailed_item.subtopics.forEach((item) => {
   subtopics_container.appendChild(SubTopic(item));
 });
 
+
+const HandleThemeButton = ()=>{
+    ToggleMode();
+    SetThemeMode(GetMode())
+}
+SetThemeMode(GetMode());
+
 document
   .getElementById("toggle-favorite")
   .addEventListener("click", ShowFavorite);
@@ -71,4 +79,4 @@ document
 
 document
   .getElementById("theme-toggle")
-  .addEventListener("click", ToggleThemeMode);
+  .addEventListener("click", HandleThemeButton);
