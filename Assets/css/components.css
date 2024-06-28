@@ -175,6 +175,12 @@
   gap: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.favorite-cards-container::-webkit-scrollbar {
+  display: none;
 }
 
 .favorite-card-img {
