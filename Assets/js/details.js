@@ -42,7 +42,7 @@ UpdateButtonVisuals(ExistInFavorite(id));
 //once the button is pressed we will toggle the state of the card.
 const HandleAddFavorite = ()=>{
     ToggleFavorite(id);
-    UpdateButtonVisuals();
+    UpdateButtonVisuals(ExistInFavorite(id));
 }
 
 //hook the functionality with the button
