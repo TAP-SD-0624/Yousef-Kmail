@@ -14,6 +14,7 @@ export const CreateCard = ({ image, category, rating, name, topic, id }) => {
         <h4 class="m-0">${topic}</h4>
         <div class="stars-container" >
         ${GenerateStars(rating).outerHTML}
+      
         </div>
         <div class="mb-4">
           <span>Auther:</span>

@@ -2,6 +2,8 @@ import data from "../../topics.json" with { type: "json" };
 
 export const GetFavoriteTopics = () => {
   let favoriteIds = JSON.parse(localStorage.getItem("favoriteIds"));
+  if(!favoriteIds)
+    return [];
   let favorites = favoriteIds.map((item) =>
     data.find((x) => x.id.toString() === item.toString())
   );
