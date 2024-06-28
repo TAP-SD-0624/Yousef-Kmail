@@ -79,6 +79,10 @@
   width: 100%;
 }
 
+.search-field {
+  outline: none;
+}
+
 .search-bar .settings .sort {
   width: 50%;
   border-left: 1px solid var(--bg-body);
