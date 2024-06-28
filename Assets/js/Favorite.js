@@ -13,6 +13,7 @@ export const Favorite = () => {
 
 
   let label = document.createElement("p");
+  label.classList.add("fw-4")
   label.innerHTML = "My Favorite Topics";
 
   container.appendChild(label);
