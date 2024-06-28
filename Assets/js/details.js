@@ -1,10 +1,9 @@
 import data from "../../topics.json" with { type: "json" };
 import { SubTopic } from "./Subtopic.js";
-import { ToggleThemeMode, ToggleFavorite } from "./Utils.js";
+import { ToggleThemeMode, ToggleFavorite as ShowFavorite } from "./Utils.js";
 import { GenerateStars } from "./StarsGenerator.js";
-import { AddFavorite } from "./FavoriteManager.js";
+import { ToggleFavorite, ExistInFavorite } from "./FavoriteManager.js";
 import { Favorite } from "./Favorite.js";
-//Add Dark mode toggle functionality to its respective button in the details page.
 
 //Retrieve the id from the QueryString in the URL
 const searchParams = new URLSearchParams(window.location.search);
@@ -29,9 +28,33 @@ document.getElementById("sub-topics-label").innerHTML =
 document
   .getElementById("stars-container")
   .appendChild(GenerateStars(detailed_item.rating));
+
+
+const UpdateButtonVisuals = ()=>{
+document
+  .getElementById("add-favorite-button").innerHTML = ExistInFavorite(id) ? "Remove from favourite " : "Add to favourite ";
+
+let i =document.createElement("i");
+i.classList.add("fa-regular" , "fa-heart");
+
+document
+  .getElementById("add-favorite-button").appendChild(i);
+}
+
+
+const HandleAddFavorite = ()=>{
+    ToggleFavorite(id);
+    UpdateButtonVisuals();
+}
+
+
 document
   .getElementById("add-favorite-button")
-  .addEventListener("click", () => AddFavorite(id));
+  .addEventListener("click", () => HandleAddFavorite(id));
+
+
+UpdateButtonVisuals();
+
 //populate the subtopics
 let subtopics_container = document.getElementById("subtopics-container");
 subtopics_container.innerHTML = "";
@@ -41,8 +64,10 @@ detailed_item.subtopics.forEach((item) => {
 
 document
   .getElementById("toggle-favorite")
-  .addEventListener("click", ToggleFavorite);
-document.getElementById("favorite").appendChild(Favorite());
+  .addEventListener("click", ShowFavorite);
+
+document
+  .getElementById("favorite").appendChild(Favorite());
 
 document
   .getElementById("theme-toggle")
