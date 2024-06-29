@@ -12,7 +12,7 @@
 }
 
 .details-card-bottom {
-  border: var(--default-border);
+  border: 1px solid rgba(78, 71, 71, 0.189);
   font-size: 0.875rem;
   padding: 0 10px;
   display: flex;
