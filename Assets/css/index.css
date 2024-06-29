@@ -10,7 +10,7 @@
   --heart-color: #dc143c;
 
   --default-border: 1px solid rgba(53, 52, 52, 0.106);
-
+  --default-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 1);
   font-family: "Nunito Sans", sans-serif;
 }
 
