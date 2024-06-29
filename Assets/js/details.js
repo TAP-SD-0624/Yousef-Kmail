@@ -2,7 +2,7 @@ import data from "../../topics.json" with { type: "json" };
 import { SubTopic } from "./Subtopic.js";
 import {  ToggleFavorite as ShowFavorite } from "./Utils.js";
 import { GenerateStars } from "./StarsGenerator.js";
-import { ToggleFavorite, ExistInFavorite } from "./FavoriteRepository.js";
+import { ToggleFavoriteTopic, ExistInFavorite, GetTopic } from "./TopicRepository.js";
 import { Favorite } from "./Favorite.js";
 import { SetThemeMode } from "./Utils.js";
 import { GetMode, ToggleMode } from "./DarkmodeManager.js";
@@ -15,7 +15,7 @@ if (!id) {
   document.location.pathname = "./index.html";
 }
 //Retrieve the topic that the details page is inspecting.
-let detailed_item = data.find((x) => x.id.toString() === id.toString());
+let detailed_item = GetTopic(id);
 
 // populate topic data among different sections of the details page.
 document.getElementById("category").innerHTML = detailed_item.category;
@@ -33,7 +33,7 @@ document
 
 
 
-
+ 
 //start
 //lets handle pressing on the button of the card(Add or remove from favorite).
 //Display correct state first on the button.  
@@ -41,7 +41,7 @@ UpdateButtonVisuals(ExistInFavorite(id));
 
 //once the button is pressed we will toggle the state of the card.
 const HandleAddFavorite = ()=>{
-    ToggleFavorite(id);
+    ToggleFavoriteTopic(id);
     UpdateButtonVisuals(ExistInFavorite(id));
 }
 

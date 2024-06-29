@@ -1,5 +1,10 @@
 import data from "../../topics.json" with { type: "json" };
 
+export const GetTopic = (id)=>{
+return data.find(x=>x.id.toString() === id.toString()); 
+}
+
+
 export const GetFavoriteTopics = () => {
   let favoriteIds = JSON.parse(localStorage.getItem("favoriteIds"));
   if(!favoriteIds)
@@ -10,7 +15,7 @@ export const GetFavoriteTopics = () => {
   return favorites;
 };
 
-export const ToggleFavorite = (id) => {
+export const ToggleFavoriteTopic = (id) => {
   let favoriteIds = JSON.parse(localStorage.getItem("favoriteIds"));
   if (!favoriteIds) {
     favoriteIds = [];
@@ -45,3 +50,4 @@ export const ExistInFavorite = (id) => {
 
   return favoriteIds.includes(id);
 };
+
