@@ -72,7 +72,26 @@
                 </div>
               </div>
             </section>
-            <section class="mt- p-4 flex-justify-center">
+            <div class="details-card-mobile mx-4">
+              <img
+                id="preview-image"
+                class="mb-4 mt-4"
+                style="
+                  width: 100%;
+                  aspect-ratio: 2/1;
+                  object-fit: cover;
+                  max-width: 500px;
+                "
+                src=""
+                alt=""
+              />
+              <p class="ml-3">HTML by <a id="auther" href="">Sarah smith</a></p>
+              <button id="add-favorite-button" class="btn add-fav-btn p-3">
+                Add to favourites
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <section class="mt-2 p-4 flex-justify-center">
               <div class="flex-justify-center fg-1 align-start">
                 <div class="sections-container">
                   <div class="px-4">
@@ -80,7 +99,7 @@
                   </div>
                   <div id="subtopics-container"></div>
                 </div>
-                <div class="details-card">
+                <div class="details-card details-card-desktop">
                   <img
                     id="preview-image"
                     src="./Assets/Logos/javascript.jpg"

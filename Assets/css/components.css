@@ -142,7 +142,7 @@
   position: absolute;
 }
 .header-title {
-  transform: translate(0, -30px);
+  padding-bottom: 20px;
 }
 .main {
   padding: 30px;
@@ -276,6 +276,10 @@
   color: black;
 }
 
+.details-card-mobile {
+  display: none;
+}
+
 .page-max-width {
   max-width: 1280px;
 }
@@ -286,6 +290,20 @@
 
   .header-title {
     transform: translate(0, 0);
+  }
+  .details-card-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-card-desktop {
+    display: none;
+  }
+
+  .details-description-container {
+    display: flex;
+    justify-content: center;
   }
 }
 
