@@ -7,6 +7,13 @@ export const DomService = {
         .split(" ")
         .forEach((className) => element.classList.add(className));
 
+    delete options.class;
+
+    options.children &&
+      options.children.forEach((child) => element.appendChild(child));
+
+    delete options.children;
+
     for (const [key, value] of Object.entries(options)) {
       element[key] = value;
     }
