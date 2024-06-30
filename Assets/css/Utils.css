@@ -295,3 +295,7 @@
 .align-start {
   align-items: flex-start;
 }
+
+.no-decoration {
+  text-decoration: none;
+}

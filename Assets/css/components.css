@@ -180,6 +180,8 @@
   box-shadow: var(--default-box-shadow);
   border-radius: 7px;
   overflow: hidden;
+  text-decoration: none;
+  color: var(--body-text);
 }
 
 .favorite-cards-container {
