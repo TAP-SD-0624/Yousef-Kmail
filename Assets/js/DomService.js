@@ -10,7 +10,10 @@ export const DomService = {
     delete options.class;
 
     options.children &&
-      options.children.forEach((child) => element.appendChild(child));
+      options.children.forEach((child) => {
+        if (child instanceof Node) element.appendChild(child);
+        else element.appendChild(document.createTextNode(child));
+      });
 
     delete options.children;
 
