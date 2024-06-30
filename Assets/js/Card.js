@@ -1,11 +1,13 @@
 import { GenerateStars } from "./StarsGenerator.js";
-
+import { DomService } from "./DomService.js";
 //Generating card HTML and populate its data into its
 //respective HTML.
 export const CreateCard = ({ image, category, rating, name, topic, id }) => {
-  let card = document.createElement("a");
-  card.href = `./details.html?id=${id}`;
-  card.classList.add("card");
+  let card = DomService.CreateElement("a", {
+    href: `./details.html?id=${id}`,
+    class: "card",
+  });
+
   card.innerHTML = `<div class="position-relative">
         <img src="./Assets/Logos/${image}" alt="" />
       </div>
