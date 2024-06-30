@@ -1,12 +1,13 @@
+import { DomService } from "./DomService.js";
 import { FavoriteCard } from "./FavoriteCard.js";
 import { GetFavoriteTopics } from "./TopicRepository.js";
 
 export const Favorite = () => {
-  let cont = document.createElement("div");
-  cont.classList.add("favorite");
-  cont.id = "favorite-container";
-
-  cont.appendChild(AddChildren());
+  let cont = DomService.CreateElement("div", {
+    class: "favorite",
+    id: "favorite-container",
+    children: [AddChildren()],
+  });
   return cont;
 };
 
@@ -16,25 +17,30 @@ export const UpdateFavourite = () => {
 };
 
 const AddChildren = () => {
-  let container = document.createElement("div");
-  container.classList.add("fg-1", "page-max-width");
+  let container = DomService.CreateElement("div", {
+    class: "fg-1 page-max-width",
+    children: [
+      DomService.CreateElement("p", {
+        class: "fw-4",
+        children: ["my favorite topics"],
+      }),
 
-  let label = document.createElement("p");
-  label.classList.add("fw-4");
-  label.innerHTML = "My Favorite Topics";
-
-  container.appendChild(label);
-
-  let innerContainer = document.createElement("div");
-  innerContainer.classList.add("favorite-cards-container");
-
-  container.appendChild(innerContainer);
-
-  let favorite_Items = GetFavoriteTopics();
-
-  favorite_Items.forEach((item) => {
-    innerContainer.appendChild(FavoriteCard(item));
+      DomService.CreateElement("div", {
+        class: "favorite-cards-container",
+        children: GetFavoriteTopicsToNodes(),
+      }),
+    ],
   });
 
   return container;
+};
+
+const GetFavoriteTopicsToNodes = () => {
+  let favorite_Items = GetFavoriteTopics();
+
+  let nodes = [];
+  favorite_Items.forEach((item) => {
+    nodes.push(FavoriteCard(item));
+  });
+  return nodes;
 };
