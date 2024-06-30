@@ -182,6 +182,7 @@
   overflow: hidden;
   text-decoration: none;
   color: var(--body-text);
+  background-color: var(--bg-default);
 }
 
 .favorite-cards-container {
@@ -200,6 +201,7 @@
 .favorite-card-img {
   width: 100%;
   aspect-ratio: 2/1;
+  background-color: white;
 }
 
 .cards-container {
