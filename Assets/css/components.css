@@ -208,6 +208,13 @@
   flex-wrap: wrap;
 }
 
+.details-card-img-mobile {
+  width: 100%;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  max-width: 500px;
+}
+
 .header-button {
   color: inherit;
   background: transparent;
