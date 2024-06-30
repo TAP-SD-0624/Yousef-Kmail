@@ -23,4 +23,13 @@ export const UpdateButtonVisuals = (state) => {
   i.classList.add("fa-regular", "fa-heart");
 
   document.getElementById("add-favorite-button").appendChild(i);
+
+  document.getElementById("add-favorite-button-mobile").innerHTML = state
+    ? "Remove from favourite "
+    : "Add to favourite ";
+
+  let ii = document.createElement("i");
+  ii.classList.add("fa-regular", "fa-heart");
+
+  document.getElementById("add-favorite-button-mobile").appendChild(ii);
 };

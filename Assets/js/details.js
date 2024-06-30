@@ -23,7 +23,14 @@ document.getElementById("topic").innerHTML = detailed_item.topic;
 document.getElementById(
   "preview-image"
 ).src = `./Assets/Logos/${detailed_item.image}`;
+
+document.getElementById(
+  "preview-image-mobile"
+).src = `./Assets/Logos/${detailed_item.image}`;
+
+
 document.getElementById("auther").innerHTML = detailed_item.name;
+document.getElementById("auther-mobile").innerHTML = detailed_item.name;
 document.getElementById("description").innerHTML = detailed_item.description;
 document.getElementById("sub-topics-label").innerHTML =
   detailed_item.topic + " sub topics";
@@ -48,6 +55,9 @@ const HandleAddFavorite = ()=>{
 //hook the functionality with the button
 document
   .getElementById("add-favorite-button")
+  .addEventListener("click", () => HandleAddFavorite(id));
+  document
+  .getElementById("add-favorite-button-mobile")
   .addEventListener("click", () => HandleAddFavorite(id));
 //end
 
